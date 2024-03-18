@@ -1,0 +1,68 @@
+/* src/styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Raleway:wght@200&family=Roboto:wght@400&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #100028;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7454a3; 
+    border-radius: 10px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .animated_text{
+  overflow: hidden;
+  animation: typing-text steps(40) 3s infinite,blink linear 0.3s infinite;
+  text-wrap: nowrap;
+  border-right: 2px solid #fff;
+  }
+  @keyframes typing-text {
+    from{
+      width: 0%;
+    }
+    to{
+      width: 430px;
+    }
+  }
+  @keyframes typing-text {
+   to{
+    opacity: 0.5;
+    border-color: transparent;
+   }
+  }
+  .icon:hover {
+    transform: scale(1.4); 
+    background-color: #20c997;
+  }
+
+  @keyframes shake {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    75% { transform: translateY(-5px); }
+    100% { transform: translateY(5px); }
+  }
+
+  .icon_shake{
+    animation: shake 2s infinite;
+  }
+
+
+  
+  
